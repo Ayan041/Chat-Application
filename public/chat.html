@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iDiscuss Chat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+</head>
+
+<body>
+    <nav>
+        <img class="logo" src="chat3.png" alt="Logo">
+        <h1>Welcome to iDiscuss Chat</h1>
+    </nav>
+
+    <div class="container"></div>
+
+    <form id="send-container" action="javascript:void(0);">
+        <input type="text" id="messageInp" placeholder="Type your message..." autocomplete="off" maxlength="500">
+        <button class="btn" type="submit" disabled>Send</button>
+    </form>
+
+    <button class="logout-btn" id="logoutBtn">Logout</button>
+</body>
+
+</html>
